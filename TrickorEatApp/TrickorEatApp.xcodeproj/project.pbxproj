@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26EBA16B2068453D00A9F8E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBA16A2068453D00A9F8E3 /* AppDelegate.swift */; };
+		26EBA16D2068453D00A9F8E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBA16C2068453D00A9F8E3 /* ViewController.swift */; };
+		26EBA1702068453D00A9F8E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EBA16E2068453D00A9F8E3 /* Main.storyboard */; };
+		26EBA1722068453D00A9F8E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26EBA1712068453D00A9F8E3 /* Assets.xcassets */; };
+		26EBA1752068453D00A9F8E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EBA1732068453D00A9F8E3 /* LaunchScreen.storyboard */; };
+		26EBA1802068453D00A9F8E3 /* TrickorEatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBA17F2068453D00A9F8E3 /* TrickorEatAppTests.swift */; };
+		26EBA18B2068453D00A9F8E3 /* TrickorEatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBA18A2068453D00A9F8E3 /* TrickorEatAppUITests.swift */; };
+		26EBA1992068459B00A9F8E3 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1982068459B00A9F8E3 /* GoogleMapsBase.framework */; };
+		26EBA19C206845E200A9F8E3 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA19A206845E200A9F8E3 /* GoogleMaps.framework */; };
+		26EBA19D206845E200A9F8E3 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA19B206845E200A9F8E3 /* GoogleMapsCore.framework */; };
+		26EBA1A02068469300A9F8E3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA19F2068469300A9F8E3 /* Accelerate.framework */; };
+		26EBA1A2206846A200A9F8E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1A1206846A200A9F8E3 /* UIKit.framework */; };
+		26EBA1A4206846AA00A9F8E3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1A3206846AA00A9F8E3 /* SystemConfiguration.framework */; };
+		26EBA1A6206846B000A9F8E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1A5206846B000A9F8E3 /* QuartzCore.framework */; };
+		26EBA1A8206846B600A9F8E3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1A7206846B600A9F8E3 /* OpenGLES.framework */; };
+		26EBA1AA206846BD00A9F8E3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1A9206846BD00A9F8E3 /* libz.tbd */; };
+		26EBA1AC206846C300A9F8E3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1AB206846C300A9F8E3 /* libc++.tbd */; };
+		26EBA1AE206846CB00A9F8E3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1AD206846CB00A9F8E3 /* ImageIO.framework */; };
+		26EBA1B0206846D000A9F8E3 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1AF206846D000A9F8E3 /* GLKit.framework */; };
+		26EBA1B2206846D600A9F8E3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1B1206846D600A9F8E3 /* CoreText.framework */; };
+		26EBA1B4206846DD00A9F8E3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1B3206846DD00A9F8E3 /* CoreTelephony.framework */; };
+		26EBA1B6206846E400A9F8E3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1B5206846E400A9F8E3 /* CoreLocation.framework */; };
+		26EBA1B8206846EA00A9F8E3 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1B7206846EA00A9F8E3 /* CoreImage.framework */; };
+		26EBA1BA206846F100A9F8E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1B9206846F100A9F8E3 /* CoreGraphics.framework */; };
+		26EBA1BC206846F900A9F8E3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1BB206846F900A9F8E3 /* CoreData.framework */; };
+		26EBA1BE20684FB300A9F8E3 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 26EBA1BD20684FB300A9F8E3 /* GoogleMaps.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26EBA17C2068453D00A9F8E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26EBA15F2068453D00A9F8E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26EBA1662068453D00A9F8E3;
+			remoteInfo = TrickorEatApp;
+		};
+		26EBA1872068453D00A9F8E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26EBA15F2068453D00A9F8E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26EBA1662068453D00A9F8E3;
+			remoteInfo = TrickorEatApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26EBA1672068453D00A9F8E3 /* TrickorEatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrickorEatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EBA16A2068453D00A9F8E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26EBA16C2068453D00A9F8E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26EBA16F2068453D00A9F8E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26EBA1712068453D00A9F8E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26EBA1742068453D00A9F8E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26EBA1762068453D00A9F8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EBA17B2068453D00A9F8E3 /* TrickorEatAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrickorEatAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EBA17F2068453D00A9F8E3 /* TrickorEatAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickorEatAppTests.swift; sourceTree = "<group>"; };
+		26EBA1812068453D00A9F8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EBA1862068453D00A9F8E3 /* TrickorEatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrickorEatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EBA18A2068453D00A9F8E3 /* TrickorEatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickorEatAppUITests.swift; sourceTree = "<group>"; };
+		26EBA18C2068453D00A9F8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EBA1982068459B00A9F8E3 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
+		26EBA19A206845E200A9F8E3 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		26EBA19B206845E200A9F8E3 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
+		26EBA19F2068469300A9F8E3 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		26EBA1A1206846A200A9F8E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		26EBA1A3206846AA00A9F8E3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		26EBA1A5206846B000A9F8E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		26EBA1A7206846B600A9F8E3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		26EBA1A9206846BD00A9F8E3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		26EBA1AB206846C300A9F8E3 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		26EBA1AD206846CB00A9F8E3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		26EBA1AF206846D000A9F8E3 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		26EBA1B1206846D600A9F8E3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		26EBA1B3206846DD00A9F8E3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		26EBA1B5206846E400A9F8E3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		26EBA1B7206846EA00A9F8E3 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		26EBA1B9206846F100A9F8E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		26EBA1BB206846F900A9F8E3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		26EBA1BD20684FB300A9F8E3 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26EBA1642068453D00A9F8E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EBA1992068459B00A9F8E3 /* GoogleMapsBase.framework in Frameworks */,
+				26EBA19C206845E200A9F8E3 /* GoogleMaps.framework in Frameworks */,
+				26EBA19D206845E200A9F8E3 /* GoogleMapsCore.framework in Frameworks */,
+				26EBA1A02068469300A9F8E3 /* Accelerate.framework in Frameworks */,
+				26EBA1BC206846F900A9F8E3 /* CoreData.framework in Frameworks */,
+				26EBA1BA206846F100A9F8E3 /* CoreGraphics.framework in Frameworks */,
+				26EBA1B8206846EA00A9F8E3 /* CoreImage.framework in Frameworks */,
+				26EBA1B6206846E400A9F8E3 /* CoreLocation.framework in Frameworks */,
+				26EBA1B4206846DD00A9F8E3 /* CoreTelephony.framework in Frameworks */,
+				26EBA1B2206846D600A9F8E3 /* CoreText.framework in Frameworks */,
+				26EBA1B0206846D000A9F8E3 /* GLKit.framework in Frameworks */,
+				26EBA1AE206846CB00A9F8E3 /* ImageIO.framework in Frameworks */,
+				26EBA1AC206846C300A9F8E3 /* libc++.tbd in Frameworks */,
+				26EBA1AA206846BD00A9F8E3 /* libz.tbd in Frameworks */,
+				26EBA1A8206846B600A9F8E3 /* OpenGLES.framework in Frameworks */,
+				26EBA1A6206846B000A9F8E3 /* QuartzCore.framework in Frameworks */,
+				26EBA1A4206846AA00A9F8E3 /* SystemConfiguration.framework in Frameworks */,
+				26EBA1A2206846A200A9F8E3 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EBA1782068453D00A9F8E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EBA1832068453D00A9F8E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26EBA15E2068453D00A9F8E3 = {
+			isa = PBXGroup;
+			children = (
+				26EBA1692068453D00A9F8E3 /* TrickorEatApp */,
+				26EBA17E2068453D00A9F8E3 /* TrickorEatAppTests */,
+				26EBA1892068453D00A9F8E3 /* TrickorEatAppUITests */,
+				26EBA1682068453D00A9F8E3 /* Products */,
+				26EBA19E2068469300A9F8E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		26EBA1682068453D00A9F8E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26EBA1672068453D00A9F8E3 /* TrickorEatApp.app */,
+				26EBA17B2068453D00A9F8E3 /* TrickorEatAppTests.xctest */,
+				26EBA1862068453D00A9F8E3 /* TrickorEatAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26EBA1692068453D00A9F8E3 /* TrickorEatApp */ = {
+			isa = PBXGroup;
+			children = (
+				26EBA16A2068453D00A9F8E3 /* AppDelegate.swift */,
+				26EBA16C2068453D00A9F8E3 /* ViewController.swift */,
+				26EBA16E2068453D00A9F8E3 /* Main.storyboard */,
+				26EBA1712068453D00A9F8E3 /* Assets.xcassets */,
+				26EBA1732068453D00A9F8E3 /* LaunchScreen.storyboard */,
+				26EBA1762068453D00A9F8E3 /* Info.plist */,
+			);
+			path = TrickorEatApp;
+			sourceTree = "<group>";
+		};
+		26EBA17E2068453D00A9F8E3 /* TrickorEatAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				26EBA17F2068453D00A9F8E3 /* TrickorEatAppTests.swift */,
+				26EBA1812068453D00A9F8E3 /* Info.plist */,
+			);
+			path = TrickorEatAppTests;
+			sourceTree = "<group>";
+		};
+		26EBA1892068453D00A9F8E3 /* TrickorEatAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26EBA18A2068453D00A9F8E3 /* TrickorEatAppUITests.swift */,
+				26EBA18C2068453D00A9F8E3 /* Info.plist */,
+			);
+			path = TrickorEatAppUITests;
+			sourceTree = "<group>";
+		};
+		26EBA19E2068469300A9F8E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26EBA1BD20684FB300A9F8E3 /* GoogleMaps.bundle */,
+				26EBA19A206845E200A9F8E3 /* GoogleMaps.framework */,
+				26EBA19B206845E200A9F8E3 /* GoogleMapsCore.framework */,
+				26EBA1982068459B00A9F8E3 /* GoogleMapsBase.framework */,
+				26EBA1BB206846F900A9F8E3 /* CoreData.framework */,
+				26EBA1B9206846F100A9F8E3 /* CoreGraphics.framework */,
+				26EBA1B7206846EA00A9F8E3 /* CoreImage.framework */,
+				26EBA1B5206846E400A9F8E3 /* CoreLocation.framework */,
+				26EBA1B3206846DD00A9F8E3 /* CoreTelephony.framework */,
+				26EBA1B1206846D600A9F8E3 /* CoreText.framework */,
+				26EBA1AF206846D000A9F8E3 /* GLKit.framework */,
+				26EBA1AD206846CB00A9F8E3 /* ImageIO.framework */,
+				26EBA1AB206846C300A9F8E3 /* libc++.tbd */,
+				26EBA1A9206846BD00A9F8E3 /* libz.tbd */,
+				26EBA1A7206846B600A9F8E3 /* OpenGLES.framework */,
+				26EBA1A5206846B000A9F8E3 /* QuartzCore.framework */,
+				26EBA1A3206846AA00A9F8E3 /* SystemConfiguration.framework */,
+				26EBA1A1206846A200A9F8E3 /* UIKit.framework */,
+				26EBA19F2068469300A9F8E3 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26EBA1662068453D00A9F8E3 /* TrickorEatApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EBA18F2068453D00A9F8E3 /* Build configuration list for PBXNativeTarget "TrickorEatApp" */;
+			buildPhases = (
+				26EBA1632068453D00A9F8E3 /* Sources */,
+				26EBA1642068453D00A9F8E3 /* Frameworks */,
+				26EBA1652068453D00A9F8E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrickorEatApp;
+			productName = TrickorEatApp;
+			productReference = 26EBA1672068453D00A9F8E3 /* TrickorEatApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26EBA17A2068453D00A9F8E3 /* TrickorEatAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EBA1922068453D00A9F8E3 /* Build configuration list for PBXNativeTarget "TrickorEatAppTests" */;
+			buildPhases = (
+				26EBA1772068453D00A9F8E3 /* Sources */,
+				26EBA1782068453D00A9F8E3 /* Frameworks */,
+				26EBA1792068453D00A9F8E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26EBA17D2068453D00A9F8E3 /* PBXTargetDependency */,
+			);
+			name = TrickorEatAppTests;
+			productName = TrickorEatAppTests;
+			productReference = 26EBA17B2068453D00A9F8E3 /* TrickorEatAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26EBA1852068453D00A9F8E3 /* TrickorEatAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EBA1952068453D00A9F8E3 /* Build configuration list for PBXNativeTarget "TrickorEatAppUITests" */;
+			buildPhases = (
+				26EBA1822068453D00A9F8E3 /* Sources */,
+				26EBA1832068453D00A9F8E3 /* Frameworks */,
+				26EBA1842068453D00A9F8E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26EBA1882068453D00A9F8E3 /* PBXTargetDependency */,
+			);
+			name = TrickorEatAppUITests;
+			productName = TrickorEatAppUITests;
+			productReference = 26EBA1862068453D00A9F8E3 /* TrickorEatAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26EBA15F2068453D00A9F8E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = cis_4500;
+				TargetAttributes = {
+					26EBA1662068453D00A9F8E3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					26EBA17A2068453D00A9F8E3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 26EBA1662068453D00A9F8E3;
+					};
+					26EBA1852068453D00A9F8E3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 26EBA1662068453D00A9F8E3;
+					};
+				};
+			};
+			buildConfigurationList = 26EBA1622068453D00A9F8E3 /* Build configuration list for PBXProject "TrickorEatApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26EBA15E2068453D00A9F8E3;
+			productRefGroup = 26EBA1682068453D00A9F8E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26EBA1662068453D00A9F8E3 /* TrickorEatApp */,
+				26EBA17A2068453D00A9F8E3 /* TrickorEatAppTests */,
+				26EBA1852068453D00A9F8E3 /* TrickorEatAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26EBA1652068453D00A9F8E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EBA1752068453D00A9F8E3 /* LaunchScreen.storyboard in Resources */,
+				26EBA1722068453D00A9F8E3 /* Assets.xcassets in Resources */,
+				26EBA1702068453D00A9F8E3 /* Main.storyboard in Resources */,
+				26EBA1BE20684FB300A9F8E3 /* GoogleMaps.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EBA1792068453D00A9F8E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EBA1842068453D00A9F8E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26EBA1632068453D00A9F8E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EBA16D2068453D00A9F8E3 /* ViewController.swift in Sources */,
+				26EBA16B2068453D00A9F8E3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EBA1772068453D00A9F8E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EBA1802068453D00A9F8E3 /* TrickorEatAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EBA1822068453D00A9F8E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EBA18B2068453D00A9F8E3 /* TrickorEatAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26EBA17D2068453D00A9F8E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26EBA1662068453D00A9F8E3 /* TrickorEatApp */;
+			targetProxy = 26EBA17C2068453D00A9F8E3 /* PBXContainerItemProxy */;
+		};
+		26EBA1882068453D00A9F8E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26EBA1662068453D00A9F8E3 /* TrickorEatApp */;
+			targetProxy = 26EBA1872068453D00A9F8E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26EBA16E2068453D00A9F8E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26EBA16F2068453D00A9F8E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26EBA1732068453D00A9F8E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26EBA1742068453D00A9F8E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26EBA18D2068453D00A9F8E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26EBA18E2068453D00A9F8E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26EBA1902068453D00A9F8E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TrickorEatApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cis4500w18.TrickorEatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26EBA1912068453D00A9F8E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TrickorEatApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cis4500w18.TrickorEatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		26EBA1932068453D00A9F8E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrickorEatAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cis4500w18.TrickorEatAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrickorEatApp.app/TrickorEatApp";
+			};
+			name = Debug;
+		};
+		26EBA1942068453D00A9F8E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrickorEatAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cis4500w18.TrickorEatAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrickorEatApp.app/TrickorEatApp";
+			};
+			name = Release;
+		};
+		26EBA1962068453D00A9F8E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrickorEatAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cis4500w18.TrickorEatAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrickorEatApp;
+			};
+			name = Debug;
+		};
+		26EBA1972068453D00A9F8E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrickorEatAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cis4500w18.TrickorEatAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrickorEatApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26EBA1622068453D00A9F8E3 /* Build configuration list for PBXProject "TrickorEatApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EBA18D2068453D00A9F8E3 /* Debug */,
+				26EBA18E2068453D00A9F8E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EBA18F2068453D00A9F8E3 /* Build configuration list for PBXNativeTarget "TrickorEatApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EBA1902068453D00A9F8E3 /* Debug */,
+				26EBA1912068453D00A9F8E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EBA1922068453D00A9F8E3 /* Build configuration list for PBXNativeTarget "TrickorEatAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EBA1932068453D00A9F8E3 /* Debug */,
+				26EBA1942068453D00A9F8E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EBA1952068453D00A9F8E3 /* Build configuration list for PBXNativeTarget "TrickorEatAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EBA1962068453D00A9F8E3 /* Debug */,
+				26EBA1972068453D00A9F8E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26EBA15F2068453D00A9F8E3 /* Project object */;
+}
