@@ -12,8 +12,6 @@
 		26EBA1702068453D00A9F8E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EBA16E2068453D00A9F8E3 /* Main.storyboard */; };
 		26EBA1722068453D00A9F8E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26EBA1712068453D00A9F8E3 /* Assets.xcassets */; };
 		26EBA1752068453D00A9F8E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EBA1732068453D00A9F8E3 /* LaunchScreen.storyboard */; };
-		26EBA1802068453D00A9F8E3 /* TrickorEatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBA17F2068453D00A9F8E3 /* TrickorEatAppTests.swift */; };
-		26EBA18B2068453D00A9F8E3 /* TrickorEatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBA18A2068453D00A9F8E3 /* TrickorEatAppUITests.swift */; };
 		26EBA1992068459B00A9F8E3 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1982068459B00A9F8E3 /* GoogleMapsBase.framework */; };
 		26EBA19C206845E200A9F8E3 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA19A206845E200A9F8E3 /* GoogleMaps.framework */; };
 		26EBA19D206845E200A9F8E3 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA19B206845E200A9F8E3 /* GoogleMapsCore.framework */; };
@@ -61,11 +59,7 @@
 		26EBA1742068453D00A9F8E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26EBA1762068453D00A9F8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26EBA17B2068453D00A9F8E3 /* TrickorEatAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrickorEatAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		26EBA17F2068453D00A9F8E3 /* TrickorEatAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickorEatAppTests.swift; sourceTree = "<group>"; };
-		26EBA1812068453D00A9F8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26EBA1862068453D00A9F8E3 /* TrickorEatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrickorEatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		26EBA18A2068453D00A9F8E3 /* TrickorEatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickorEatAppUITests.swift; sourceTree = "<group>"; };
-		26EBA18C2068453D00A9F8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26EBA1982068459B00A9F8E3 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
 		26EBA19A206845E200A9F8E3 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		26EBA19B206845E200A9F8E3 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
@@ -134,8 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				26EBA1692068453D00A9F8E3 /* TrickorEatApp */,
-				26EBA17E2068453D00A9F8E3 /* TrickorEatAppTests */,
-				26EBA1892068453D00A9F8E3 /* TrickorEatAppUITests */,
 				26EBA1682068453D00A9F8E3 /* Products */,
 				26EBA19E2068469300A9F8E3 /* Frameworks */,
 			);
@@ -162,24 +154,6 @@
 				26EBA1762068453D00A9F8E3 /* Info.plist */,
 			);
 			path = TrickorEatApp;
-			sourceTree = "<group>";
-		};
-		26EBA17E2068453D00A9F8E3 /* TrickorEatAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				26EBA17F2068453D00A9F8E3 /* TrickorEatAppTests.swift */,
-				26EBA1812068453D00A9F8E3 /* Info.plist */,
-			);
-			path = TrickorEatAppTests;
-			sourceTree = "<group>";
-		};
-		26EBA1892068453D00A9F8E3 /* TrickorEatAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				26EBA18A2068453D00A9F8E3 /* TrickorEatAppUITests.swift */,
-				26EBA18C2068453D00A9F8E3 /* Info.plist */,
-			);
-			path = TrickorEatAppUITests;
 			sourceTree = "<group>";
 		};
 		26EBA19E2068469300A9F8E3 /* Frameworks */ = {
@@ -352,7 +326,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26EBA1802068453D00A9F8E3 /* TrickorEatAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +333,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26EBA18B2068453D00A9F8E3 /* TrickorEatAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
