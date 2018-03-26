@@ -22,6 +22,16 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //Set the size of the Google Maps window
+        //Determine the pixel height
+        let screenSize: CGRect = UIScreen.main.bounds
+        let mapWidth = screenSize.width
+        let mapHeight = screenSize.height
+        
+        //The bottom navigation bar takes 10% of the screen
+        let barHeight = screenSize.height/10
+        let mapFrame = CGRect(x: 0, y: 20, width: mapWidth, height: mapHeight-barHeight) //Tab bar is 49 px
+        
         //Initalize the map to the viewer's current location
         locationManager = CLLocationManager()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -33,7 +43,7 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         let camera = GMSCameraPosition.camera(withLatitude: defaultLocation.coordinate.latitude,
                                               longitude: defaultLocation.coordinate.longitude,
                                               zoom: zoomLevel)
-        mapView = GMSMapView.map(withFrame: view.bounds, camera: camera)
+        mapView = GMSMapView.map(withFrame: mapFrame, camera: camera)
         mapView.settings.myLocationButton = true
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mapView.isMyLocationEnabled = true
@@ -43,22 +53,6 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         mapView.isHidden = true
         mapView.settings.compassButton = true
         
-        /*
-        // Create a GMSCameraPosition that tells the map to display the
-        // coordinate -33.86,151.20 at zoom level 6.
-        let camera = GMSCameraPosition.camera(withLatitude: 43.530879, longitude: -80.226041, zoom: 15.0)
-        let mapView = GMSMapView.map(withFrame: self.view.bounds, camera: camera)
-        mapView.settings.compassButton = true
-        mapView.settings.myLocationButton = true
-        view = mapView
-        
-        // Creates a marker in the center of the map.
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 43.530879, longitude: -80.226041)
-        marker.title = "University Centre"
-        marker.snippet = "Guelph, ON N1G 1Y4"
-        marker.map = mapView*/
-        
         // Creates a marker with the bus pickup location
         let busMarker = GMSMarker()
         busMarker.position = CLLocationCoordinate2D(latitude: 43.531957, longitude: -80.219103)
@@ -66,6 +60,7 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         busMarker.snippet = "Parking Lot 13"
         busMarker.map = mapView
         
+        // Creates a marker with the goods dropoff location
         let goodsMarker = GMSMarker()
         goodsMarker.icon = GMSMarker.markerImage(with: .orange)
         goodsMarker.position = CLLocationCoordinate2D(latitude: 43.531896, longitude: -80.230188)
@@ -100,6 +95,7 @@ extension ViewController: CLLocationManagerDelegate {
         }
     }
     
+    //Location Manager Authorization, uses the example from Google
     // Handle authorization for the location manager.
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
