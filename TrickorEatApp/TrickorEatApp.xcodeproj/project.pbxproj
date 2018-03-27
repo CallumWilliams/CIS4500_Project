@@ -31,6 +31,7 @@
 		26EBA1BA206846F100A9F8E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1B9206846F100A9F8E3 /* CoreGraphics.framework */; };
 		26EBA1BC206846F900A9F8E3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EBA1BB206846F900A9F8E3 /* CoreData.framework */; };
 		26EBA1BE20684FB300A9F8E3 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 26EBA1BD20684FB300A9F8E3 /* GoogleMaps.bundle */; };
+		6A90CF12206ACF7900DB115F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90CF11206ACF7900DB115F /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		26EBA1B9206846F100A9F8E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		26EBA1BB206846F900A9F8E3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		26EBA1BD20684FB300A9F8E3 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		6A90CF11206ACF7900DB115F /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				26EBA16A2068453D00A9F8E3 /* AppDelegate.swift */,
 				26EBA16C2068453D00A9F8E3 /* ViewController.swift */,
+				6A90CF11206ACF7900DB115F /* Login.swift */,
 				26EBA16E2068453D00A9F8E3 /* Main.storyboard */,
 				26EBA1712068453D00A9F8E3 /* Assets.xcassets */,
 				26EBA1732068453D00A9F8E3 /* LaunchScreen.storyboard */,
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A90CF12206ACF7900DB115F /* Login.swift in Sources */,
 				26EBA16D2068453D00A9F8E3 /* ViewController.swift in Sources */,
 				26EBA16B2068453D00A9F8E3 /* AppDelegate.swift in Sources */,
 			);
