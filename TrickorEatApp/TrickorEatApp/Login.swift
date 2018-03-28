@@ -13,6 +13,7 @@ class Login: UIViewController {
     @IBOutlet weak var EmailField: UITextField!
     @IBOutlet weak var PasswordField: UITextField!
     @IBOutlet weak var LoginButton: UIButton!
+    @IBOutlet weak var ErrorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,15 +31,14 @@ class Login: UIViewController {
         
         let login_usr = EmailField.text!
         let login_pass = PasswordField.text!
-        
-        print(login_usr + " " + login_pass)
+        ErrorLabel.text = ""
         
         //validate email structure
         let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let test = NSPredicate(format: "SELF MATCHES %@", regex)
         if (test.evaluate(with: login_usr) == false) {
             print("Invalid")
-            EmailField.textColor = UIColor.red
+            ErrorLabel.text = "Email format invalid"
         } else {
             print("Valid")
             

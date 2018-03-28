@@ -46,6 +46,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-bn-xst">
+                                <rect key="frame" x="16" y="433" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXa-oB-weO">
                                 <rect key="frame" x="82" y="374" width="211" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -56,6 +63,7 @@
                                 </state>
                                 <connections>
                                     <action selector="AttemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uO-TO-chP"/>
+                                    <segue destination="G2x-Wg-5Dk" kind="show" id="sDv-dL-2IK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,6 +72,7 @@
                     </view>
                     <connections>
                         <outlet property="EmailField" destination="f9N-AA-67S" id="08K-EE-fox"/>
+                        <outlet property="ErrorLabel" destination="cOm-bn-xst" id="U6h-Lu-v9M"/>
                         <outlet property="LoginButton" destination="GXa-oB-weO" id="wxb-1a-Y1i"/>
                         <outlet property="PasswordField" destination="S6W-pE-nxk" id="xpn-QD-5Dc"/>
                     </connections>
@@ -79,13 +88,34 @@
                     <view key="view" contentMode="scaleToFill" id="Zw2-N4-d6O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;team name/id&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7G-8S-plM">
+                                <rect key="frame" x="16" y="29" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hW0-Zd-HRP">
+                                <rect key="frame" x="61" y="399" width="253" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Geotag Current Location">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fIr-dw-R9c"/>
                     </view>
+                    <connections>
+                        <outlet property="GeotagButton" destination="hW0-Zd-HRP" id="Y6A-LG-QmC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zis-Dr-tnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="255" y="-3"/>
+            <point key="canvasLocation" x="253.59999999999999" y="-3.1484257871064472"/>
         </scene>
     </scenes>
 </document>

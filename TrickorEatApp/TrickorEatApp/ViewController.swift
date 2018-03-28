@@ -10,7 +10,8 @@ import UIKit
 import GoogleMaps
 
 class ViewController: UIViewController, GMSMapViewDelegate {
-
+    @IBOutlet weak var GeotagButton: UIButton!
+    
     var locationManager = CLLocationManager()
     var currentLocation: CLLocation?
     var mapView: GMSMapView!
@@ -20,17 +21,21 @@ class ViewController: UIViewController, GMSMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GeotagButton.layer.cornerRadius = 8
+        GeotagButton.layer.borderWidth = 1
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         //Set the size of the Google Maps window
         //Determine the pixel height
         let screenSize: CGRect = UIScreen.main.bounds
         let mapWidth = screenSize.width
-        let mapHeight = screenSize.height
+        let mapHeight = screenSize.height/2
         
         //The bottom navigation bar takes 10% of the screen
         let barHeight = screenSize.height/10
-        let mapFrame = CGRect(x: 0, y: 20, width: mapWidth, height: mapHeight-barHeight) //Tab bar is 49 px
+        let mapFrame = CGRect(x: 0, y: 80, width: mapWidth, height: mapHeight-barHeight) //Tab bar is 49 px
         
         //Initalize the map to the viewer's current location
         locationManager = CLLocationManager()
