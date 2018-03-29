@@ -10,10 +10,11 @@ import UIKit
 import GoogleMaps
 
 class ViewController: UIViewController, GMSMapViewDelegate {
-    @IBOutlet weak var GeotagButton: UIButton!
+    
+    @IBOutlet var showTags: UITextView!
     
     var locationManager = CLLocationManager()
-    var currentLocation: CLLocation?
+    var currentLocation: CLLocation!
     var mapView: GMSMapView!
     var zoomLevel: Float = 15.0
     
@@ -23,8 +24,9 @@ class ViewController: UIViewController, GMSMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        GeotagButton.layer.cornerRadius = 8
-        GeotagButton.layer.borderWidth = 1
+        //GeotagButton Config
+        //GeotagButton.layer.cornerRadius = 8
+        //GeotagButton.layer.borderWidth = 1
         
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -32,23 +34,28 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         //Determine the pixel height
         let screenSize: CGRect = UIScreen.main.bounds
         let mapWidth = screenSize.width
-        let mapHeight = screenSize.height/2
+        let mapHeight = screenSize.height-100
         
         //The bottom navigation bar takes 10% of the screen
         let barHeight = screenSize.height/10
-        let mapFrame = CGRect(x: 0, y: 80, width: mapWidth, height: mapHeight-barHeight) //Tab bar is 49 px
+        let mapFrame = CGRect(x: 0, y: 60, width: mapWidth, height: mapHeight-barHeight) //Tab bar is 49 px
         
+        if (CLLocationManager.locationServicesEnabled()){
         //Initalize the map to the viewer's current location
-        locationManager = CLLocationManager()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
-        locationManager.distanceFilter = 50
-        locationManager.delegate = self
-        locationManager.startUpdatingLocation()
+            locationManager = CLLocationManager()
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestAlwaysAuthorization()
+            locationManager.distanceFilter = 50
+            locationManager.delegate = self
+            locationManager.startUpdatingLocation()
+        } else {
+            print ("Location Services are not enabled.")
+        }
         
         let camera = GMSCameraPosition.camera(withLatitude: defaultLocation.coordinate.latitude,
                                               longitude: defaultLocation.coordinate.longitude,
                                               zoom: zoomLevel)
+        
         mapView = GMSMapView.map(withFrame: mapFrame, camera: camera)
         mapView.settings.myLocationButton = true
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -79,6 +86,13 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func insertTag(_ sender: UIButton) {
+        currentLocation = locationManager.location
+        let addString = "\n<" + String(currentLocation.coordinate.latitude) + "," + String(currentLocation.coordinate.longitude) + ">"
+        showTags.text = showTags.text + addString
+    }
+    
 }
 
 //Location Manager delegates
@@ -107,15 +121,20 @@ extension ViewController: CLLocationManagerDelegate {
         switch status {
         case .restricted:
             print("Location access was restricted.")
+            locationManager.stopUpdatingLocation()
         case .denied:
             print("User denied access to location.")
             // Display the map using the default location.
             mapView.isHidden = false
+            locationManager.stopUpdatingLocation()
         case .notDetermined:
             print("Location status not determined.")
+            locationManager.requestWhenInUseAuthorization()
+            locationManager.stopUpdatingLocation()
         case .authorizedAlways: fallthrough
         case .authorizedWhenInUse:
             print("Location status is OK.")
+            locationManager.startUpdatingLocation()
         }
     }
     
@@ -124,4 +143,6 @@ extension ViewController: CLLocationManagerDelegate {
         locationManager.stopUpdatingLocation()
         print("Error: \(error)")
     }
+    
+
 }
