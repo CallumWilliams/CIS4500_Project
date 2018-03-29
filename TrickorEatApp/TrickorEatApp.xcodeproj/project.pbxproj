@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		26C7D7A7206C90EB00C1DA32 /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C7D7A6206C90EB00C1DA32 /* GooglePlaces.framework */; };
 		26C7D7A9206C911B00C1DA32 /* GooglePlaces.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 26C7D7A8206C911B00C1DA32 /* GooglePlaces.bundle */; };
-		26C7D7AB206CB2AB00C1DA32 /* operatingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C7D7AA206CB2AB00C1DA32 /* operatingFunctions.swift */; };
 		26EBA16B2068453D00A9F8E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBA16A2068453D00A9F8E3 /* AppDelegate.swift */; };
 		26EBA16D2068453D00A9F8E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBA16C2068453D00A9F8E3 /* ViewController.swift */; };
 		26EBA1702068453D00A9F8E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EBA16E2068453D00A9F8E3 /* Main.storyboard */; };
@@ -57,7 +56,6 @@
 /* Begin PBXFileReference section */
 		26C7D7A6206C90EB00C1DA32 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlaces.framework; sourceTree = "<group>"; };
 		26C7D7A8206C911B00C1DA32 /* GooglePlaces.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = "../../../Downloads/GooglePlaces-2.6.0/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle"; sourceTree = "<group>"; };
-		26C7D7AA206CB2AB00C1DA32 /* operatingFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operatingFunctions.swift; sourceTree = "<group>"; };
 		26EBA1672068453D00A9F8E3 /* TrickorEatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrickorEatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EBA16A2068453D00A9F8E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26EBA16C2068453D00A9F8E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 				26EBA16C2068453D00A9F8E3 /* ViewController.swift */,
 				6A90CF11206ACF7900DB115F /* Login.swift */,
 				26EBA16E2068453D00A9F8E3 /* Main.storyboard */,
-				26C7D7AA206CB2AB00C1DA32 /* operatingFunctions.swift */,
 				26EBA1712068453D00A9F8E3 /* Assets.xcassets */,
 				26EBA1732068453D00A9F8E3 /* LaunchScreen.storyboard */,
 				26EBA1762068453D00A9F8E3 /* Info.plist */,
@@ -332,7 +329,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A90CF12206ACF7900DB115F /* Login.swift in Sources */,
-				26C7D7AB206CB2AB00C1DA32 /* operatingFunctions.swift in Sources */,
 				26EBA16D2068453D00A9F8E3 /* ViewController.swift in Sources */,
 				26EBA16B2068453D00A9F8E3 /* AppDelegate.swift in Sources */,
 			);
