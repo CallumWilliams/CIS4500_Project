@@ -17,6 +17,7 @@ class ViewController: UIViewController, GMSMapViewDelegate {
     var mapView: GMSMapView!
     var zoomLevel: Float = 15.0
     
+    //If the user disables location services, then it will show the University of Guelph Campus
     let defaultLocation = CLLocation(latitude: 43.530879, longitude: -80.226041)
     
     override func viewDidLoad() {

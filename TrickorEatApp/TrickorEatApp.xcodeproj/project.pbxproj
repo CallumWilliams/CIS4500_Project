@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26C7D7A7206C90EB00C1DA32 /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C7D7A6206C90EB00C1DA32 /* GooglePlaces.framework */; };
+		26C7D7A9206C911B00C1DA32 /* GooglePlaces.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 26C7D7A8206C911B00C1DA32 /* GooglePlaces.bundle */; };
 		26EBA16B2068453D00A9F8E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBA16A2068453D00A9F8E3 /* AppDelegate.swift */; };
 		26EBA16D2068453D00A9F8E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBA16C2068453D00A9F8E3 /* ViewController.swift */; };
 		26EBA1702068453D00A9F8E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EBA16E2068453D00A9F8E3 /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26C7D7A6206C90EB00C1DA32 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlaces.framework; sourceTree = "<group>"; };
+		26C7D7A8206C911B00C1DA32 /* GooglePlaces.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = "../../../Downloads/GooglePlaces-2.6.0/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle"; sourceTree = "<group>"; };
 		26EBA1672068453D00A9F8E3 /* TrickorEatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrickorEatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EBA16A2068453D00A9F8E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26EBA16C2068453D00A9F8E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 				26EBA1B2206846D600A9F8E3 /* CoreText.framework in Frameworks */,
 				26EBA1B0206846D000A9F8E3 /* GLKit.framework in Frameworks */,
 				26EBA1AE206846CB00A9F8E3 /* ImageIO.framework in Frameworks */,
+				26C7D7A7206C90EB00C1DA32 /* GooglePlaces.framework in Frameworks */,
 				26EBA1AC206846C300A9F8E3 /* libc++.tbd in Frameworks */,
 				26EBA1AA206846BD00A9F8E3 /* libz.tbd in Frameworks */,
 				26EBA1A8206846B600A9F8E3 /* OpenGLES.framework in Frameworks */,
@@ -162,6 +167,8 @@
 		26EBA19E2068469300A9F8E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26C7D7A8206C911B00C1DA32 /* GooglePlaces.bundle */,
+				26C7D7A6206C90EB00C1DA32 /* GooglePlaces.framework */,
 				26EBA1BD20684FB300A9F8E3 /* GoogleMaps.bundle */,
 				26EBA19A206845E200A9F8E3 /* GoogleMaps.framework */,
 				26EBA19B206845E200A9F8E3 /* GoogleMapsCore.framework */,
@@ -296,6 +303,7 @@
 				26EBA1722068453D00A9F8E3 /* Assets.xcassets in Resources */,
 				26EBA1702068453D00A9F8E3 /* Main.storyboard in Resources */,
 				26EBA1BE20684FB300A9F8E3 /* GoogleMaps.bundle in Resources */,
+				26C7D7A9206C911B00C1DA32 /* GooglePlaces.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
